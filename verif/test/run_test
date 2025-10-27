@@ -1,0 +1,9 @@
+#!/bin/sh
+# Test run script
+
+# Define arguments
+OPT="+UVM_TESTNAME=apb_test         \
+     +UVM_VERBOSITY=UVM_HIGH"
+
+# Run simulation
+make run_sim OPT="$OPT" GUI=1
